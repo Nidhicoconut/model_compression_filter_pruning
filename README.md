@@ -15,29 +15,34 @@ vgg11_scratch_cifar100_prune.py – Performs pruning on VGG-11 trained on CIFAR-
 
 Steps to implement the project
  1. Setup Environment
+    Make sure you have the required packages installed.
+    
  2. Setup Model (resnet10_setup_cifar10.py, resnet10_setup_cifar100.py, vgg_11_scratch_setup_cifar10.py, vgg_11_scratch_setup_cifar100.py)
-    # Train ResNet10 on CIFAR-10
-    python resnet10_setup_cifar10.py
-
-    # Train ResNet10 on CIFAR-100
-    python resnet10_setup_cifar100.py
     
-    # Train VGG-11 on CIFAR-10
-    python vgg_11_scratch_setup_cifar10.py
-    
-    # Train VGG-11 on CIFAR-100
-    python vgg_11_scratch_setup_cifar100.py
+    python resnet10_setup_cifar10.py - Train ResNet10 on CIFAR-10
+    python resnet10_setup_cifar100.py - Train ResNet10 on CIFAR-100
+    python vgg_11_scratch_setup_cifar10.py - Train VGG-11 on CIFAR-10
+    python vgg_11_scratch_setup_cifar100.py - Train VGG-11 on CIFAR-100
 
- 4. Prune the Model (resnet10_cifar10_prune.py, resnet10_cifar100_prune.py, vgg11_scratch_cifar10_prune.py, vgg11_scratch_cifar100_prune.py)
-     # Prune ResNet10 on CIFAR-10
-     python resnet10_cifar10_prune.py
-     
-     # Prune ResNet10 on CIFAR-100
-     python resnet10_cifar100_prune.py
-     
-     # Prune VGG-11 on CIFAR-10
-     python vgg11_scratch_cifar10_prune.py
-     
-     # Prune VGG-11 on CIFAR-100
-     python vgg11_scratch_cifar100_prune.py
+ 3. Prune the Model (resnet10_cifar10_prune.py, resnet10_cifar100_prune.py, vgg11_scratch_cifar10_prune.py, vgg11_scratch_cifar100_prune.py)
+     python resnet10_cifar10_prune.py - Prune ResNet10 on CIFAR-10
+     python resnet10_cifar100_prune.py - Prune ResNet10 on CIFAR-100
+     python vgg11_scratch_cifar10_prune.py - Prune VGG-11 on CIFAR-10
+     python vgg11_scratch_cifar100_prune.py - Prune VGG-11 on CIFAR-100
+
+Files Hierarchy
+
+model_compression_filter_pruning/
+│
+├── README.md                                # Project overview and instructions
+│
+├── resnet10_cifar100_prune.py               # Prunes ResNet10 on CIFAR-100
+├── resnet10_cifar10_prune.py                # Prunes ResNet10 on CIFAR-10
+├── resnet10_setup_cifar10.py                # Trains ResNet10 from scratch on CIFAR-10
+├── resnet10_setup_cifar100.py               # Trains ResNet10 from scratch on CIFAR-100
+│
+├── vgg11_scratch_cifar100_prune.py          # Prunes VGG-11 on CIFAR-100
+├── vgg11_scratch_cifar10_prune.py           # Prunes VGG-11 on CIFAR-10
+├── vgg_11_scratch_setup_cifar10.py          # Trains VGG-11 from scratch on CIFAR-10
+├── vgg_11_scratch_setup_cifar100.py         # Trains VGG-11 from scratch on CIFAR-100
 
