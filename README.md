@@ -33,16 +33,13 @@ Steps to implement the project
 Files Hierarchy
 
 model_compression_filter_pruning/
-│
-├── README.md                                Project overview and instructions
-│
-├── resnet10_cifar100_prune.py               Prunes ResNet10 on CIFAR-100
-├── resnet10_cifar10_prune.py                Prunes ResNet10 on CIFAR-10
-├── resnet10_setup_cifar10.py                Trains ResNet10 from scratch on CIFAR-10
-├── resnet10_setup_cifar100.py               Trains ResNet10 from scratch on CIFAR-100
-│
-├── vgg11_scratch_cifar100_prune.py          Prunes VGG-11 on CIFAR-100
-├── vgg11_scratch_cifar10_prune.py           Prunes VGG-11 on CIFAR-10
-├── vgg_11_scratch_setup_cifar10.py          Trains VGG-11 from scratch on CIFAR-10
-├── vgg_11_scratch_setup_cifar100.py         Trains VGG-11 from scratch on CIFAR-100
+ 1. resnet10_setup_cifar10.py
+ 2. resnet10_cifar10_prune.py
+ 3. resnet10_setup_cifar100.py
+ 4. resnet10_cifar100_prune.py
+ 5. vgg_11_scratch_setup_cifar10.py
+ 6. vgg11_scratch_cifar10_prune.py
+ 7. vgg_11_scratch_setup_cifar100.py
+ 8. vgg11_scratch_cifar100_prune.py                               
 
+Note: The setup files must be executed before running their corresponding pruning scripts. However, all four model setup scripts are independent and can be run in any order.
