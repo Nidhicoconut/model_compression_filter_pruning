@@ -34,15 +34,15 @@ Files Hierarchy
 
 model_compression_filter_pruning/
 │
-├── README.md                                # Project overview and instructions
+├── README.md                                Project overview and instructions
 │
-├── resnet10_cifar100_prune.py               # Prunes ResNet10 on CIFAR-100
-├── resnet10_cifar10_prune.py                # Prunes ResNet10 on CIFAR-10
-├── resnet10_setup_cifar10.py                # Trains ResNet10 from scratch on CIFAR-10
-├── resnet10_setup_cifar100.py               # Trains ResNet10 from scratch on CIFAR-100
+├── resnet10_cifar100_prune.py               Prunes ResNet10 on CIFAR-100
+├── resnet10_cifar10_prune.py                Prunes ResNet10 on CIFAR-10
+├── resnet10_setup_cifar10.py                Trains ResNet10 from scratch on CIFAR-10
+├── resnet10_setup_cifar100.py               Trains ResNet10 from scratch on CIFAR-100
 │
-├── vgg11_scratch_cifar100_prune.py          # Prunes VGG-11 on CIFAR-100
-├── vgg11_scratch_cifar10_prune.py           # Prunes VGG-11 on CIFAR-10
-├── vgg_11_scratch_setup_cifar10.py          # Trains VGG-11 from scratch on CIFAR-10
-├── vgg_11_scratch_setup_cifar100.py         # Trains VGG-11 from scratch on CIFAR-100
+├── vgg11_scratch_cifar100_prune.py          Prunes VGG-11 on CIFAR-100
+├── vgg11_scratch_cifar10_prune.py           Prunes VGG-11 on CIFAR-10
+├── vgg_11_scratch_setup_cifar10.py          Trains VGG-11 from scratch on CIFAR-10
+├── vgg_11_scratch_setup_cifar100.py         Trains VGG-11 from scratch on CIFAR-100
 
