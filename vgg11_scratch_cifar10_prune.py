@@ -247,26 +247,6 @@ def prune_vgg11_model(model, prune_ratio):
 
     return pruned_model
 
-def finetune_model(model, trainloader, epochs=10):
-    model.train()
-    criterion = nn.CrossEntropyLoss()
-    optimizer = torch.optim.SGD(model.parameters(), lr=0.001, momentum=0.9)
-    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, epochs)
-
-    for epoch in range(epochs):
-        running_loss = 0.0
-        for i, (inputs, labels) in enumerate(trainloader):
-            inputs, labels = inputs.to(device), labels.to(device)
-            optimizer.zero_grad()
-            outputs = model(inputs)
-            loss = criterion(outputs, labels)
-            loss.backward()
-            optimizer.step()
-            running_loss += loss.item()
-        scheduler.step()
-        print(f'Epoch {epoch+1}, Loss: {running_loss/len(trainloader):.4f}')
-    return model
-
 for ratio in prune_ratios:
     print(f"\n=== Pruning ratio: {ratio} ===")
 
