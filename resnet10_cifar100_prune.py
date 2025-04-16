@@ -79,7 +79,7 @@ class ResNet10(nn.Module):
         out = torch.flatten(out, 1)
         return self.fc(out)
 
-model = torch.load("/content/drive/MyDrive/Copy of resnet10_cifar100_full.pth", map_location=device, weights_only=False)
+model = torch.load("/content/drive/MyDrive/resnet10_cifar100_full.pth", map_location=device, weights_only=False)
 model.to(device)
 model.eval()
 
